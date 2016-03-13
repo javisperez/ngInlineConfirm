@@ -1,0 +1,22 @@
+{
+    "name": "ng-inline-confirm",
+    "version": "1.0.0",
+    "main": "ConfirmButton.js",
+    "homepage": "https://github.com/javisperez/mousetrapdirectives",
+    "authors": [
+        "Javis Perez <javisperez@gmail.com>"
+    ],
+    "keywords": [
+        "angularjs",
+        "directives",
+        "confirm"
+    ],
+    "ignore": [
+        ".gitignore",
+        "bower.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "angular": "^1.5.0"
+    }
+}

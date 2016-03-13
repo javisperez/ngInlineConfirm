@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="exampleController">
+    <inline-confirm on-confirm="onConfirm" on-reject="onReject" on-validate="onValidate">Cancel</inline-confirm>
+    <button class="btn btn-primary" ng-hide="hideConfirm">Confirm</button>
+
+    <script src="../ConfirmButton.js"></script>
+    <script>
+        angular.module('app', ['ng-inline-confirm'])
+
+            .controller('exampleController', function ($scope) {
+
+                $scope.onConfirm = function () {
+                    alert('Confirmated');
+                    $scope.hideConfirm = false;
+                };
+
+                $scope.onReject = function () {
+                    $scope.hideConfirm = false;
+                };
+
+                $scope.onValidate = function () {
+                    $scope.hideConfirm = true;
+                }
+
+            });
+    </script>
+</body>
+</html>
