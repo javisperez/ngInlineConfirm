@@ -32,9 +32,9 @@ and of course, in the controller you need to declare those callbacks functions (
 # Options
 This directive has 5 options available, none of them are required:
 
-**buttonLabel**: the default label of the button in the default state (i.e. "Cancel")
-**message**: the message to display when confirmating (i.e. "Are you sure you want to cancel?")
-**onValidate**: a callback function that will be called when the user clicks on the button (i.e. clicking "Cancel")
-**onConfirm**: a callback function called when the user confirm the action (i.e. clicking "yes i'm sure")
-**onReject**: a callback function called when the user rejects the action (i.e. clicking "no")
+- **buttonLabel**: the default label of the button in the default state (i.e. "Cancel")
+- **message**: the message to display when confirmating (i.e. "Are you sure you want to cancel?")
+- **onValidate**: a callback function that will be called when the user clicks on the button (i.e. clicking "Cancel")
+- **onConfirm**: a callback function called when the user confirm the action (i.e. clicking "yes i'm sure")
+- **onReject**: a callback function called when the user rejects the action (i.e. clicking "no")
 
